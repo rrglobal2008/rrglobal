@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RR Global Enterprises | Premium Talent Deployment</title>
+    <style>
+        :root {
+            --primary-color: #0d233a; 
+            --secondary-color: #1d3557; 
+            --accent-color: #4a90e2; 
+            --text-dark: #2d3748;
+            --text-light: #f7fafc;
+            --bg-light: #ffffff;
+            --card-bg: #f8fafc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        .hero {
+            padding: 100px 5%;
+            text-align: center;
+            background: linear-gradient(135deg, #0d233a 0%, #1d3557 100%);
+            color: var(--text-light);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--text-light);
+        }
+
+        .btn-primary:hover {
+            background-color: #357abd;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            border: 2px solid var(--text-light);
+            color: var(--text-light);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--text-light);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        .services {
+            padding: 60px 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            border-top: 4px solid var(--primary-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .card h2 {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 16px;
+            color: #4a5568;
+        }
+
+        .contact-section {
+            background-color: #f1f5f9;
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 32px;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .contact-section p {
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            color: #4a5568;
+        }
+
+        .contact-details {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .contact-item {
+            color: var(--secondary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: #a0aec0;
+            text-align: center;
+            padding: 30px 5%;
+            font-size: 14px;
+            border-top: 1px solid #2d3748;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 32px; }
+            .hero p { font-size: 16px; }
+            .contact-details { flex-direction: column; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">RR GLOBAL<span> ENTERPRISES</span></div>
+        <div style="font-size: 14px; font-weight: 600; opacity: 0.8;">EST. 2026</div>
+    </header>
+
+    <section class="hero">
+        <h1>Premium Talent Deployment For Elite Educational Institutes</h1>
+        <p>RR Global Enterprises bridges the gap between premier academic institutions and top-tier educators. We source, vet, and strategically deploy subject matter experts to optimize institutional excellence.</p>
+        <div class="cta-buttons">
+            <a href="#consultation" class="btn btn-primary">Partner With Us (Institutes)</a>
+            <a href="#consultation" class="btn btn-secondary">Apply for Placement (Teachers)</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="card">
+            <h2>Institutional Talent Solutions</h2>
+            <p>Accelerate your organization's academic performance. We provide fully vetted, highly qualified faculty and subject matter experts tailored to your institute's specific curriculum demands. Streamline your hiring process with our verified talent network.</p>
+        </div>
+        <div class="card">
+            <h2>Elite Faculty Placements</h2>
+            <p>Advance your teaching career with premium placements. We connect outstanding educators and specialized consultants with leading academic institutions for high-impact roles, project-based assignments, and long-term engagements.</p>
+        </div>
+    </section>
+
+    <!-- Executive Leadership Section -->
+    <section class="services" style="padding-top: 0px; padding-bottom: 60px; text-align: center;">
+        <h2 style="grid-column: 1 / -1; font-size: 32px; color: var(--primary-color); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Executive Leadership</h2>
+        <div class="card" style="text-align: center;">
+            <h3 style="font-size: 22px; color: var(--primary-color); margin-bottom: 5px;">Rishabh Raj</h3>
+            <p style="font-weight: 600; color: var(--accent-color); margin-bottom: 15px; text-transform: uppercase; font-size: 14px; letter-spacing: 1px;">Founder</p>
+            <p style="font-size: 15px; color: #4a5568;">Directing the strategic vision, institutional partnerships, and long-term growth vectors for the enterprise.</p>
+        </div>
+        <div class="card" style="text-align: center;">
+            <h3 style="font-size: 22px; color: var(--primary-color); margin-bottom: 5px;">Shivam Kumar Singh</h3>
+            <p style="font-weight: 600; color: var(--accent-color); margin-bottom: 15px; text-transform: uppercase; font-size: 14px; letter-spacing: 1px;">Chief Executive Officer (CEO)</p>
+            <p style="font-size: 15px; color: #4a5568;">Overseeing daily operations, talent acquisition metrics, and corporate execution frameworks.</p>
+        </div>
+    </section>
+
+    <section class="contact-section" id="consultation">
+        <h2>Initiate a Consultation</h2>
+        <p>Whether you are an institute looking to fulfill a critical faculty requirement or a professional educator seeking your next placement, our operations desk is ready to facilitate immediately.</p>
+        <div class="contact-details">
+            <a href="tel:+918603736492" class="contact-item">📞 Call / WhatsApp: +91 86037 36492</a>
+            <a href="mailto:talent.lead@rrglobalenterprises.in" class="contact-item">📧 Email: talent.lead@rrglobalenterprises.in</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 RR Global Enterprises. All rights reserved. | Operations Desk: rrglobalenterprises.in</p>
+    </footer>
+
+</body>
+</html>
